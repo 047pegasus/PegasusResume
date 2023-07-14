@@ -1,0 +1,237 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10.9pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Tanishq Agarwal} \\ \vspace{1pt}
+    \small +91-99844-29317 $|$ \href{mailto:tanishqoct11@gmail.com}{\underline{tanishqoct11@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/tanishq047}{\underline{linkedin.com/in/tanishq047}} $|$
+    \href{https://github.com/047pegasus}{\underline{github.com/047pegasus}}
+    \href{https://047pegasus.pro}{\underline{047pegasus.pro}}
+    
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Jaypee University of Engineering and Technology}{Guna, Madhya Pradesh, India}
+      {Bachelor of Technology in Computer Science Engineering | CGPA: 9.0}{Sept. 2021 -- Present}
+    \resumeSubheading
+      {Tender Hearts School}{Lucknow, Uttar Pradesh, India}
+      {Senior Secondary Education | Score: 93\% }{Aug. 2018 -- May 2020}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Student Expert}{July 2023 -- Present}
+      {Postman}{JUET, Madhya Pradesh}
+      \resumeItemListStart
+        \resumeItem{Developed a RESTful API using Go and PostgreSQL to perform CRUD operations on stored  data in a Postgres DB using JWT (JSON Web Tokens) to simulate a bank transaction API.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Student Intern Team Lead}{Aug. 2022 -- Oct. 2022}
+      {IBM SkillsBuild @Edunet Foundation}{Remote}
+      \resumeSubSubheading
+      {Cloud Development Intern}{}
+    \resumeItemListStart
+        \resumeItem{Communicate with team manager to set up project wireframe and workflow.}
+        \resumeItem{Develop and deploy an Attendance Management System on a cloud instance using AWS EC2.}
+        \resumeItem{Develop UI and a web application using React.js and imlplement authentication using oAuth and GCP Authentication.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Community Founder and Lead}{July 2023 -- Presnt}
+      {Golang Guna}{Guna, MP}
+      \resumeItemListStart
+        \resumeItem{Developed a community of members all across Guna, Madhya Pradesh and started teaching about GoLang and its benefits to the software community.}
+        \resumeItem{Organized college meetups in JUET to talk about upcoming trends in Go and how OpenSource is contributing to the development of Go.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Dock-X} $|$ \emph{Python, Docker-SDK , Docker, CustomTkinter, Git}}{May 2023 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developed a kiosk GUI application to monitor host system containers.}
+            \resumeItem{UI Design Prototype Workflow in AdobeXD and Figma \& implemented all features using CustomTkinter GUI Framework.}
+            \resumeItem{Implmented Backend using Docker SDK in Python and Matplotlib for Data-Visualization.}
+            \resumeItem{Used mutlithreading and subprocess generation for optimization of graph refresh rates up to 46.8\%.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Zephyr API} $|$ \emph{Svelte, Go, Rapid API, TravisCI, Git, JWT}}{July 2023 -- Present}
+          \resumeItemListStart
+            \resumeItem{Started developing a Backend for the API endpoint written in Go to entertain incoming query requests.}
+            \resumeItem{Deployed a CRUD operations program in Go to pport API request methods: GET, POST, \& PUT.}
+            \resumeItem{Implemented continuous delivery using TravisCI to build the API server side program upon new a release on GitHub.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+     \resumeSubHeadingListStart
+     \resumeSubItem{\textbf{Languages}:}{~~~~ Go, C/C++, Python, SQL (MYSQL, Postgres), JavaScript, BASH, HTML/CSS, Java} \\
+     \resumeSubItem{\textbf{Frameworks}:}{~~~React, Node.js, CustomTkinter, Qt, Material-UI, FastAPI, RapidAPI} \\
+     \resumeSubItem{\textbf{Dev Tools}:}{~~~~~~Git, Docker, TravisCI, Jeknins, AWS, Google Cloud Platform, VS Code, Jira, Visual Studio, Firebase} \\
+     \resumeSubItem{\textbf{Libraries}:}{~~~~~~~~net, net/http, requests, Cobra, Viper, Docker SDK, NumPy, Matplotlib}
+     \resumeSubItem{\textbf{Platforms}:}{~~~~~~~LINUX, Web, Windows, Arduino, AWS, GCP, IBM Cloud}
+     \resumeSubItem{\textbf{Soft Skills}:}{~~~~~~Leadership, Event Management, Writing, Public Speaking, Time Management}
+\resumeSubHeadingListEnd
+
+%-----------Certifications-----------
+\section{Certifications \& Contributions}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Specialization in Google Go}{Coursera -- UCI, Irvine}
+      {Completed specialization in Go Programming of 3 courses including concurrent programming.}{June -- July 2023}
+    \resumeSubheading
+      {Completed HacktoberFest, 2022}{GitHub}
+      {Merged 6 PRs and achieved all Badges}{October 2022}
+    \resumeSubheading
+      {Runner Up @Galactic Hacks 2k23}{JUET}
+      {Developed XeroMail- a CLI utility to check for a spam email, written in Go}{Aug. 2018 -- May 2020}
+  \resumeSubHeadingListEnd
+
+%-----------Volunteering-----------
+\section{Volunteering}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Lead Developer @ TEDxJUET}{JUET}
+      {Designed and implemented the website for the event using React.js}{November -- August 2023}
+    \resumeSubheading
+      {Community Volunteer @ BotNet Club, 2021}{JUET}
+      {Researched \& developed tools for Cisco IOS to perform vulnerability scanning for Cisco Routers \& APs.}{Oct 2021 -- July 2022 }
+    \resumeSubheading
+      {Community Volunteer @ PyData Guna 23}{JUET}
+      {Researched on Matplotlib and its implementation of data heatmaps}{June 2023 -- Present}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
