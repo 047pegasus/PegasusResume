@@ -1,0 +1,237 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10.9pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Tanishq Agarwal} \\ \vspace{1pt}
+    \small +91-9984429317 $|$ \href{mailto:tanishqoct11@gmail.com}{\underline{tanishqoct11@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/tanishq047}{\underline{linkedin.com/in/tanishq047}} $|$
+    \href{https://github.com/047pegasus}{\underline{github.com/047pegasus}}
+    % \href{https://047pegasus.codes}{\underline{047pegasus.codes}}
+    
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Jaypee University of Engineering and Technology}{Guna, Madhya Pradesh, India}
+      {Bachelor of Technology in Computer Science Engineering | GPA: 8.9}{Sept. 2021 -- May 2025}
+    \resumeSubheading
+      {Tender Hearts School}{Lucknow, Uttar Pradesh, India}
+      {Senior Secondary Education}{Aug. 2018 -- May 2020}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    
+    \resumeSubheading
+      {Junior Backend Developer}{January 2026 -- Present}
+      {EZ Labs Pvt. Ltd.}{Onsite}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented scalable features like mass lead outreach, prospect conversion utilities and email tracking for an in-house outreach tool (Synapse). Developed a production ready task scheduling service to handle concurrent jobs and implemented failure tolerance in it. Provided production support for the same as well.}
+        \resumeItem{Developed and maintained an inhouse PPT Template application in WinUI (EZ Studio) with licensing support and also designed a fast search mechanism for a large dataset of labelled images.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer - L1}{March 2025 -- December 2025}
+      {Quantegies Pvt.}{Remote}
+      \resumeItemListStart
+        \resumeItem{Architected and deployed scalable microservices for SynQ (AI-powered trading journal) and BaQlabs (MBO backtesting platform), implementing Circuit Breaker and Sidecar patterns for critical authentication and business logic services, ensuring high availability and fault tolerance.}
+        \resumeItem{Optimized backend performance through strategic caching mechanisms, advanced SQL techniques (window functions, efficient joins, subquery elimination), and robust error monitoring systems, delivering high-throughput applications with secure API designs and database operations.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Software Development Engineer - 1}{May 2024 -- March 2025}
+      {Webknot Technologies}{Hybrid}
+      \resumeItemListStart
+        \resumeItem{Worked with the Backend \& System Design teams on large scale projects \& clients like Spotdraft, Xencapture, \& Flo-Tempo to deliver upto 61\% REST API upload speed improvements in tasks like file uploads using multithreaded uploads to AWS-S3 Bucket Storage from client and by implementing  techniques like process offloading using process queues and caching.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    % \resumeSubheading
+    %   {Student Intern Team Lead}{Aug. 2022 -- Oct. 2022}
+    %   {IBM SkillsBuild @Edunet Foundation}{Remote}
+    %   \resumeSubSubheading
+    %   {Cloud Development Intern}{}
+    % \resumeItemListStart
+    %     \resumeItem{Communicate with team manager to set up project wireframe and workflow.}
+    %     \resumeItem{Develop and deploy an Attendance Management System in React, on the cloud using AWS.}
+    % \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\underline{\href{https://iscache.vercel.app}{isCache: Local Distributed Cache-as-a-Service}}} $|$ \emph{Python, Redis, ReactJS, Grafana, Docker}}{}
+          \resumeItemListStart
+            \resumeItem{Built a production-grade distributed in-memory caching library for Python with zero core dependencies. Supports LRU, LFU, and TTL eviction policies with consistent hashing to distribute keys evenly across nodes, plus automatic failover and replication for fault tolerance.}
+            \resumeItem{Features a live real-time dashboard to monitor cache hit rates, a Redis-style CLI for runtime inspection and rate limiting. Available via pip install iscache}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{\underline{\href{https://github.com/047pegasus/rider-service}{Order-Delivery Service}}} $|$ \emph{Python(Django), Confluent, Redis, PostgreSQL, Prometheus, Docker}}{}
+          \resumeItemListStart
+            \resumeItem{Designed and engineered a flexible order-rider serve to serve customers with support for multi order delivery per rider.}
+            \resumeItem{Implemented delivery routing and event driven architecture using Redis channels and an analytics service using Confluent Kafka for event data retention.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+     \resumeSubHeadingListStart
+     \resumeSubItem{\textbf{Languages}:}{~~~~ Python, C++, C, Go, SQL, JavaScript, BASH, HTML/CSS} \\
+     \resumeSubItem{\textbf{Frameworks}:}{~~ Django, FastAPI, Gin, Express, NestJS} \\
+     \resumeSubItem{\textbf{Dev Tools}:}{~~~~~ Docker Stack (Compose \& Swarm), Jenkins, AWS, Supabase} \\
+     \resumeSubItem{\textbf{Platforms}:}{~~~~~ Linux, Web, Windows, AWS}
+     \resumeSubItem{\textbf{Soft Skills}:}{~~~~~ Leadership, Management, Public Speaking}
+\resumeSubHeadingListEnd
+
+%-----------Certifications-----------
+\section{Certifications \& Contributions}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Fastn Track Winner @Hack the Mountains 4.0}{MLH | Godspeed}
+      {Developed Reactify Git and used Fastn Documentation}{October 2023}
+    \resumeSubheading
+      {Specialization in Google Go}{Coursera -- UCI, Irvine}
+      {Completed specialization in Go Programming of 3 courses including concurrent programming.}{June -- July 2023}
+    \resumeSubheading
+      {Runner Up @Galactic Hacks 2k23}{JUET}
+      {Developed XeroMail- a CLI utility to check for a spam email, written in Go}{October 2022}
+  \resumeSubHeadingListEnd
+
+% %-----------Volunteering-----------
+% \section{Volunteering}
+%   \resumeSubHeadingListStart
+%     \resumeSubheading
+%       {Development Lead @ Google Developers Student Clubs}{GDSC, JUET}
+%       {Made the team understand technological concepts on Svelte, Go, Docker \& React.}{August 2023 -- Present}
+%   \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
